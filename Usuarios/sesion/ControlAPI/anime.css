@@ -1,0 +1,44 @@
+.kemicofa-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+.kemicofa-row > * {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+.kemicofa-row .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+}
+
+.kemicofa-row .card > .card-content > .card-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.kemicofa-row .card > .card-content {
+    flex-grow: 1;
+    text-align: justify;
+    margin: 5%;
+    color: #000;
+}
+
+.kemicofa-row .card > .card-image {
+    flex-shrink: 0;
+    overflow-y: hidden;
+    align-self: center;
+}
+
+#search_form{
+    text-align: center; 
+}
